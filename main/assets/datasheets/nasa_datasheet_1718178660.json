@@ -1,0 +1,83 @@
+{
+    "dirty_path": "/mnt/c/Users/moabd/Documents/Projects/Internal/dashboard/data/raw/nasa/dirty.csv",
+    "repaired_path": "/mnt/c/Users/moabd/Documents/Projects/Internal/dashboard/data/processed/nasa/combined_detections/_repair_1718178651.csv",
+    "original_data_version": 0,
+    "repaired_data_version": 0,
+    "dataset_name": "nasa",
+    "dataset_shape": [
+        1503,
+        6
+    ],
+    "error_detection_methods": [
+        "Outlier detection (IF)",
+        "Outlier detection (IQR)"
+    ],
+    "error_repair_method": "ML imputer",
+    "error_count": 16,
+    "error_detection_params": [
+        {
+            "Outlier_detection_IF": {
+                "contamination": 0.01
+            },
+            "Outlier_detection_IQR": {
+                "k": 1.5
+            }
+        }
+    ],
+    "error_repair_params": [
+        {
+            "ML_Imputer": {
+                "repair_method": "separate",
+                "num_method": "decisionTree",
+                "cat_method": "knn",
+                "max_features": "sqrt",
+                "missing_values": NaN,
+                "n_neighbors": 2
+            }
+        },
+        {
+            "ML_Imputer": {
+                "repair_method": "separate",
+                "num_method": "decisionTree",
+                "cat_method": "knn",
+                "max_features": "sqrt",
+                "missing_values": NaN,
+                "n_neighbors": 2
+            }
+        }
+    ],
+    "errors": [
+        [
+            "79",
+            "5"
+        ],
+        [
+            "390",
+            "5"
+        ],
+        [
+            "392",
+            "5"
+        ],
+        [
+            "721",
+            "5"
+        ],
+        [
+            "723",
+            "5"
+        ],
+        [
+            "1201",
+            "5"
+        ],
+        [
+            "1412",
+            "5"
+        ],
+        [
+            "1501",
+            "5"
+        ]
+    ]
+}

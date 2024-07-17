@@ -1,0 +1,7 @@
+Table Name,Attribute Name,DMV,Frequency,Detecting Tool
+dirty,frequency,1250,85,Rand
+dirty,chord_length,0.2286,247,Rand
+dirty,frequency,..00,7,SYN
+dirty,frequency,0,22,SYN
+dirty,chord_length,0,5,SYN
+dirty,thickness,0,4,SYN
